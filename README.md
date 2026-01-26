@@ -55,6 +55,9 @@ STAFDD/
 ├── track/
 ├── ReID.pt
 └── ultralytics/
+
+---
+
 🔧 Core Components
 SSCA-YOLO.yaml
 Configuration file defining the training framework of the proposed SSCA-YOLO detector, including network structure and training settings.
@@ -72,6 +75,8 @@ ReID.pt
 Pretrained Re-identification (ReID) model used to maintain identity consistency during multi-target tracking.
 
 Other directories (e.g., docker/, docs/, track/, ultralytics/) provide supporting code and dependencies and are not the primary focus of this work.
+
+---
 
 📊 Dataset
 The YOLO training dataset, pretrained model weights, test videos, and test results are publicly available at:
