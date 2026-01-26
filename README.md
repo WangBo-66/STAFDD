@@ -5,7 +5,7 @@ This repository provides the **official implementation** of the paper:
 **STAFDD: A Spatio-Temporal Automatic Fish Disease Detection Method**  
 Bo Wang et al.
 
-The project focuses on automated fish disease detection under high-density aquaculture environments by integrating **object detection, multi-target tracking, and spatio-temporal behavior analysis**.
+This project focuses on automated fish disease detection in high-density aquaculture environments by integrating **object detection, multi-target tracking, and spatio-temporal behavior analysis**.
 
 ---
 
@@ -16,10 +16,8 @@ The framework integrates:
 
 - An improved YOLOv8-based detector (**SSCA-YOLO**)
 - A customized multi-object tracking algorithm (**ByTeSort**)
-- Trajectory-based behavior analysis using **LSTM**
-- Re-identification (ReID) for identity consistency in long-term tracking
-
-The method aims to achieve accurate disease detection and health assessment from **video-level fish behavior and appearance cues**.
+- Trajectory-level behavior analysis using **LSTM**
+- Re-identification (ReID) for long-term identity consistency
 
 ---
 
@@ -34,15 +32,15 @@ The experiments were conducted under the following environment:
 - **cuDNN**: 90501
 
 ### Key Dependencies
+
 ```text
 ultralytics           8.3.127
 ultralytics-thop      2.0.14
-
-⚠️ Note: The codebase is developed and tested under the above configuration.
+⚠️ Note
+The codebase is developed and tested under the above configuration.
 Compatibility with other versions is not guaranteed.
 
 📁 Repository Structure
-
 The repository is organized as follows:
 
 STAFDD/
@@ -57,10 +55,7 @@ STAFDD/
 ├── track/
 ├── ReID.pt
 └── ultralytics/
-
-
-#Core Components
-
+🔧 Core Components
 SSCA-YOLO.yaml
 Configuration file defining the training framework of the proposed SSCA-YOLO detector, including network structure and training settings.
 
@@ -78,59 +73,30 @@ Pretrained Re-identification (ReID) model used to maintain identity consistency 
 
 Other directories (e.g., docker/, docs/, track/, ultralytics/) provide supporting code and dependencies and are not the primary focus of this work.
 
-
 📊 Dataset
-
 The YOLO training dataset, pretrained model weights, test videos, and test results are publicly available at:
 
 👉 Hugging Face Dataset
 https://huggingface.co/datasets/wangbo66/STAFDD-dataset
 
-The dataset includes:
-
-YOLO-format annotated images
-
-Trained .pt model weights
-
-Raw test videos
-
-Corresponding inference and evaluation results
-
 Please refer to the dataset card on Hugging Face for detailed data organization and usage instructions.
-
 
 🚀 Usage
 Training
-
 Training is performed using the SSCA-YOLO framework defined in SSCA-YOLO.yaml, with parameters specified in tran_yolo.py.
 
-
 python tran_yolo.py
-
-
-
-#Tracking and Behavior Analysis
-
+Tracking and Behavior Analysis
 Detection results are processed using the proposed ByTeSort tracker.
 
-
-📌 Notes
-
-This repository focuses on method implementation, while datasets and trained models are hosted separately on Hugging Face.
-
-The code is intended for research and academic use.
-
-For reproducibility, users are strongly encouraged to follow the provided environment configuration.
+Fish trajectories are further analyzed using the LSTM-based scripts in the LSTM/ directory to infer fish health status.
 
 📄 License
-
 This project is released under the MIT License.
 See the LICENSE file for details.
 
 📖 Citation
-
 If you use this code or dataset in your research, please cite the corresponding paper:
-
 
 @article{wang2024stafdd,
   title={STAFDD: A Spatio-Temporal Automatic Fish Disease Detection Method},
@@ -138,13 +104,8 @@ If you use this code or dataset in your research, please cite the corresponding 
   journal={},
   year={2024}
 }
-
-
 📬 Contact
-
-For questions, issues, or collaborations, please contact:
+For questions or collaborations, please contact:
 
 Bo Wang
 Email: 3020201781@jsnu.edu
-
-Fish trajectories are further analyzed using the LSTM-based scripts in the LSTM/ directory to infer health-related behaviors.
