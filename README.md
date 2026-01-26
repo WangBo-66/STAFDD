@@ -1,20 +1,3 @@
-<div align="center">
-  <p>
-    <img width="100%" src="https://raw.githubusercontent.com/ultralytics/assets/main/yolov8/banner-yolov8.png" alt="STAFDD banner">
-  </p>
-
-[English](README.md)
-
-<div>
-    <img src="https://img.shields.io/badge/Task-Fish%20Disease%20Detection-blue" />
-    <img src="https://img.shields.io/badge/Model-SSCA--YOLO-green" />
-    <img src="https://img.shields.io/badge/Tracking-ByTeSort-orange" />
-    <img src="https://img.shields.io/badge/License-CC--BY--4.0-lightgrey" />
-</div>
-</div>
-
-<br>
-
 # STAFDD: A Spatio-Temporal Automatic Fish Disease Detection Method
 
 This repository provides the **official implementation** of the paper:
