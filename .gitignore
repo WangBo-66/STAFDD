@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.conda/
+*.egg-info/
+
+# PyTorch / DL
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# YOLO / training outputs
+runs/
+outputs/
+weights/
+
+# Dataset
+data/
+datasets/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Ultralytics source (use pip install ultralytics)
+ultralytics/
