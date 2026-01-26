@@ -58,7 +58,8 @@ STAFDD/
 ├── ReID.pt
 └── ultralytics/
 
-Core Components
+
+#Core Components
 
 SSCA-YOLO.yaml
 Configuration file defining the training framework of the proposed SSCA-YOLO detector, including network structure and training settings.
@@ -76,6 +77,7 @@ ReID.pt
 Pretrained Re-identification (ReID) model used to maintain identity consistency during multi-target tracking.
 
 Other directories (e.g., docker/, docs/, track/, ultralytics/) provide supporting code and dependencies and are not the primary focus of this work.
+
 
 📊 Dataset
 
@@ -96,18 +98,21 @@ Corresponding inference and evaluation results
 
 Please refer to the dataset card on Hugging Face for detailed data organization and usage instructions.
 
+
 🚀 Usage
 Training
 
 Training is performed using the SSCA-YOLO framework defined in SSCA-YOLO.yaml, with parameters specified in tran_yolo.py.
 
+
 python tran_yolo.py
 
-Tracking and Behavior Analysis
+
+
+#Tracking and Behavior Analysis
 
 Detection results are processed using the proposed ByTeSort tracker.
 
-Fish trajectories are further analyzed using the LSTM-based scripts in the LSTM/ directory to infer health-related behaviors.
 
 📌 Notes
 
@@ -126,6 +131,7 @@ See the LICENSE file for details.
 
 If you use this code or dataset in your research, please cite the corresponding paper:
 
+
 @article{wang2024stafdd,
   title={STAFDD: A Spatio-Temporal Automatic Fish Disease Detection Method},
   author={Wang, Bo and others},
@@ -133,10 +139,12 @@ If you use this code or dataset in your research, please cite the corresponding 
   year={2024}
 }
 
+
 📬 Contact
 
 For questions, issues, or collaborations, please contact:
 
 Bo Wang
-Email: wangbo@ihb.ac.cn
+Email: 3020201781@jsnu.edu
 
+Fish trajectories are further analyzed using the LSTM-based scripts in the LSTM/ directory to infer health-related behaviors.
