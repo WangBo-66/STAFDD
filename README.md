@@ -44,6 +44,7 @@ ultralytics-thop      2.0.14
 
 The repository is organized as follows:
 
+```text
 STAFDD/
 ├── README.md
 ├── LICENSE
@@ -56,6 +57,7 @@ STAFDD/
 ├── track/
 ├── ReID.pt
 └── ultralytics/
+```
 
 Core Components
 
@@ -100,7 +102,9 @@ Training
 
 Training is performed using the SSCA-YOLO framework defined in SSCA-YOLO.yaml, with parameters specified in tran_yolo.py.
 
+```bash
 python tran_yolo.py
+```
 
 Tracking and Behavior Analysis
 
@@ -121,16 +125,6 @@ For reproducibility, users are strongly encouraged to follow the provided enviro
 This project is released under the MIT License.
 See the LICENSE file for details.
 
-📖 Citation
-
-If you use this code or dataset in your research, please cite the corresponding paper:
-
-@article{wang2024stafdd,
-  title={STAFDD: A Spatio-Temporal Automatic Fish Disease Detection Method},
-  author={Wang, Bo and others},
-  journal={},
-  year={2024}
-}
 
 📬 Contact
 
